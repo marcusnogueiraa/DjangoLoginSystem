@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background: #FBFBFB;
+  min-height: 100vh;
+
+  font-size: 1rem;
+  font-family: "Inter";
+  font-style: italic;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-title{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 37px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 37px;
+  margin-bottom: 23px;
+}
+
+.login-input{
+  font-weight: 100;
+  font-size: 1.2rem;
+
+  width: 365px;
+  height: 60px;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.login-input::placeholder {
+  font-weight: 1000;
+  color: rgba(92, 141, 137, 0.17);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.options-login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-login{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 100;
+
+  transition: 100ms ease-in-out;
+}
+
+.submit-button{
+  font-family: "Inter";
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+  background-color: #5C8D89;
+
+  width: 120px;
+  height: 51px;
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.nav-link:hover{
+  color: #5C8D89;
+  font-weight: 800;
+}
+
+.submit-button:hover{
+  scale: 1.05;
+}
+
+.login-input:focus{
+  outline: none;
+  border-color: #5C8D89;
+}
+
+.login-input:valid{
+  outline: none;
+  border-color: #5C8D89;
+}
+
+@media (max-width: 420px) {
+
+  .form-group{
+    gap: 10px;
+  }
+  
+  .login-input{
+    width: 210px;
+  }
+
+  .options-login{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
