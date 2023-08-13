@@ -99,7 +99,7 @@
   font-weight: 800;
 }
 
-.submit-button:hover{
+.back-button:hover, .submit-button:hover{
   scale: 1.05;
 }
 
@@ -113,7 +113,36 @@
   border-color: #5C8D89;
 }
 
+.back-button{
+  font-family: "Inter";
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+  background-color: #5C8D89;
+
+  margin-top: 30px;
+
+  width: 312px;
+  height: 51px;
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+
+.sucess-message{
+  font-weight: 300;
+  padding-bottom: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+
 @media (max-width: 420px) {
+
+  .signin-title{
+    text-align: center;
+  }
 
   .form-group{
     gap: 10px;
