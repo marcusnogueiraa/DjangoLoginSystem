@@ -54,10 +54,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'webapp.urls'
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'webapp/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
