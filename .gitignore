@@ -1,2 +1,13 @@
-/venv
+# Files
+db.sqlite3
+
+# Folders
+.vscode/
+venv/
+.pytest_cache/
+__pycache__/
+htmlcov/
+
+# Extensions
 .env
+.pyc
